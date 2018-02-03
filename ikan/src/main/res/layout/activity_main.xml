@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.ikan.MainActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_titles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="@color/colorAccent">
+
+    </android.support.design.widget.TabLayout>
+
+    <View
+        android:id="@+id/split"
+        android:layout_below="@+id/tab_titles"
+        android:background="#070707"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <cn.ikan.MyViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/split"></cn.ikan.MyViewPager>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.sdt.view.MenuDialogView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_menu"
+    android:layout_width="300dp"
+    android:layout_height="380dp"
+    android:layout_gravity="center"
+    android:background="#88888888"
+    android:clickable="true"
+    android:descendantFocusability="afterDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_uninstall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/w8"
+            android:background="@drawable/menu_btn_bg"
+            android:paddingLeft="@dimen/w8"
+            android:paddingRight="@dimen/w8"
+            android:text="卸载应用"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/w8"
+            android:background="@drawable/menu_btn_bg"
+            android:paddingLeft="@dimen/w8"
+            android:paddingRight="@dimen/w8"
+            android:text="清除缓存"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_clear_user_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/h8"
+            android:background="@drawable/menu_btn_bg"
+            android:paddingLeft="@dimen/w8"
+            android:paddingRight="@dimen/w8"
+            android:text="清除用户数据"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</cn.sdt.view.MenuDialogView>

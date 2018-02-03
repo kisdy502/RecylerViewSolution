@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:clipToPadding="false"
+    tools:context="cn.sdt.fmanager.fragment.FileListFragment">
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w86"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/h4"
+        android:layout_marginBottom="@dimen/h4"
+        android:paddingLeft="@dimen/w6"
+        android:textSize="22sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current"
+        android:layout_marginLeft="@dimen/w80"
+        android:layout_marginRight="@dimen/w80"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+
+        <cn.sdt.weiget.recycle.TvRecyclerView
+            android:id="@+id/file_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/h4">
+
+        </cn.sdt.weiget.recycle.TvRecyclerView>
+
+        <cn.sdt.weiget.recycle.FocusFrameView
+            android:id="@+id/frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></cn.sdt.weiget.recycle.FocusFrameView>
+
+    </FrameLayout>
+
+</RelativeLayout>

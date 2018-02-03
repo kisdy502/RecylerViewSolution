@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/alise_blue"
+        android:clickable="true"
+        android:descendantFocusability="afterDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/w364"
+            android:orientation="vertical">
+
+            <Button
+                android:drawableLeft="@drawable/delete"
+                android:id="@+id/operate_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/h6"
+                android:background="@drawable/menu_btn_bg"
+                android:padding="@dimen/h12"
+                android:text="删除"
+                android:gravity="right|center"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/operate_cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/h6"
+                android:background="@drawable/menu_btn_bg"
+                android:padding="@dimen/h12"
+                android:gravity="right|center"
+                android:drawableLeft="@drawable/cut"
+                android:text="剪切"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/operate_copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/h6"
+                android:background="@drawable/menu_btn_bg"
+                android:padding="@dimen/h12"
+                android:gravity="right|center"
+                android:text="复制"
+                android:drawableLeft="@drawable/copy"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/operate_paste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/h6"
+                android:background="@drawable/menu_btn_bg"
+                android:padding="@dimen/h12"
+                android:gravity="right|center"
+                android:text="粘贴"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/operate_rename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/h6"
+                android:background="@drawable/menu_btn_bg"
+                android:gravity="right|center"
+                android:padding="@dimen/h12"
+                android:text="重命名"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/operate_protype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/h6"
+                android:background="@drawable/menu_btn_bg"
+                android:padding="@dimen/h12"
+                android:text="文件属性"
+                android:gravity="right|center"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

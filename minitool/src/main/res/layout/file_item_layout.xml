@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h160"
+    android:background="@drawable/common_itembg_selector"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_marginTop="@dimen/h12"
+    >
+
+    <ImageView
+        android:id="@+id/apkIcon"
+        android:layout_width="@dimen/w120"
+        android:layout_height="@dimen/h120"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/w18" />
+
+    <TextView
+        android:id="@+id/apkName"
+        android:textColor="#0000AA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w24"
+        android:layout_marginTop="@dimen/h10"
+        android:layout_toRightOf="@+id/apkIcon"
+        android:text="蜜蜂视频"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/versionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h12"
+        android:layout_toRightOf="@+id/apkName"
+        android:text="1.02.01"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/packageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apkName"
+        android:layout_marginLeft="@dimen/w24"
+        android:layout_toRightOf="@+id/apkIcon"
+        android:text="/cn.beevideo"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/startActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apkName"
+        android:layout_marginLeft="@dimen/w12"
+        android:layout_marginTop="@dimen/h2"
+        android:layout_toRightOf="@+id/packageName"
+        android:text="/cn.beevideo.MainActivity"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/md5Sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sha1Sign"
+        android:layout_marginLeft="@dimen/w24"
+        android:layout_toRightOf="@+id/apkIcon"
+        android:text="md5:78:9A:02:93"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/sha1Sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/h10"
+        android:layout_marginLeft="@dimen/w24"
+        android:layout_toRightOf="@+id/apkIcon"
+        android:text="sha1:A8:AA:C2:11"
+        android:textSize="16sp" />
+
+</RelativeLayout>

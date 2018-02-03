@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="cn.sdt.fmanager.fragment.FileCategoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="/category" />
+
+    <cn.sdt.weiget.recycle.TvRecyclerView
+        android:id="@+id/categoryList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </cn.sdt.weiget.recycle.TvRecyclerView>
+</LinearLayout>

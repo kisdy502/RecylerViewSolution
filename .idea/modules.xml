@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RecylerViewSolution.iml" filepath="$PROJECT_DIR$/RecylerViewSolution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/designpattern/designpattern.iml" filepath="$PROJECT_DIR$/designpattern/designpattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ikan/ikan.iml" filepath="$PROJECT_DIR$/ikan/ikan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/minitool/minitool.iml" filepath="$PROJECT_DIR$/minitool/minitool.iml" />
+    </modules>
+  </component>
+</project>
